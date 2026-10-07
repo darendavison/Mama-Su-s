@@ -77,13 +77,12 @@ const FORM_ENDPOINT = "https://formspree.io/f/mvkzkarv";
     });
   }
 
-  // Swap photo placeholders for real images once they exist in /images
+  // Show each card photo only once its file exists in /images (boxes stay hidden otherwise)
   document.querySelectorAll(".ph[data-img]").forEach((ph) => {
     const img = new Image();
     img.alt = ph.dataset.alt || "";
     img.loading = "lazy";
     img.onload = () => {
-      ph.textContent = "";
       ph.appendChild(img);
       ph.classList.add("has-img");
     };

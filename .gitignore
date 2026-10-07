@@ -9,5 +9,6 @@
 !/favicon.png
 !/robots.txt
 !/progress.txt
-# Future site photos (steamer.jpg, sauce.jpg, hands.jpg, og-image.jpg)
+# Site images (og-image.jpg now; fried.jpg, sauce.jpg, hands.jpg later)
 !/images/
+!/images/og-image.jpg

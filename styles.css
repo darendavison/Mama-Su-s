@@ -211,19 +211,13 @@ input[aria-invalid="true"] { border-color: var(--error); box-shadow: 0 0 0 3px r
 .card h3 { color: var(--maroon); margin-top: 18px; }
 .card p { margin: 0; font-weight: 700; }
 .ph {
+  display: none; /* shown by script.js only when the photo file loads */
   aspect-ratio: 4 / 3;
   border-radius: 16px;
   overflow: hidden;
-  display: grid; place-items: center;
-  background: repeating-linear-gradient(45deg, var(--cream) 0 14px, var(--gold-light) 14px 28px);
-  border: 3px dashed var(--maroon);
 }
-.card-cream .ph { background: repeating-linear-gradient(45deg, var(--gold-light) 0 14px, #FFF1C9 14px 28px); }
-.ph span {
-  background: var(--cream); color: var(--maroon);
-  padding: 8px 16px; border-radius: 999px; font-weight: 800;
-}
-.ph.has-img { border: 0; background: none; }
+.ph.has-img { display: block; }
+.ph:not(.has-img) + h3 { margin-top: 0; }
 .ph img { width: 100%; height: 100%; object-fit: cover; }
 
 /* Social */
