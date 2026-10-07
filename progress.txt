@@ -13,6 +13,7 @@
 - Compressed logo: logo.png (929 KB, 800px) replaced by logo.jpg (104 KB, 600px, JPEG q80); logo.png removed from repo
 - Added .gitignore that allow-lists only site files (+ images/ folder); stray "txt" file now ignored
 - Built the page: sticky top bar, maroon hero with logo badge, gold marquee, signup form, "What we make" cards, "Where to find us", footer
+- Formspree connected (endpoint mvkzkarv) in script.js and index.html form action
 - Signup posts to Formspree via fetch; noscript users get a normal form POST to the same endpoint
 - Logo and favicon.png (180px) copied from ~/Downloads/"MAMA SU'S Woven Bamboo Logo.png"
 - Added CNAME (mamasusdumplings.com) and robots.txt
@@ -20,11 +21,10 @@
 
 ## Next step
 
-Create the Formspree form, then put its ID in BOTH script.js (FORM_ENDPOINT) and the form action in index.html.
+Real Facebook page URL in index.html ("Where to find us"), then add photos and push/deploy (see TODOs).
 
 ## TODOs
 
-- [ ] Set Formspree endpoint (script.js FORM_ENDPOINT + index.html form action)
 - [ ] Real Facebook page URL (index.html, "TODO" comment in "Where to find us")
 - [ ] Add images/steamer.jpg, images/sauce.jpg, images/hands.jpg (placeholders swap automatically)
 - [ ] Add images/og-image.jpg (1200x630) for link previews

@@ -1,5 +1,4 @@
-// TODO: replace REPLACE_ME with the real Formspree form ID (also update the form action in index.html)
-const FORM_ENDPOINT = "https://formspree.io/f/REPLACE_ME";
+const FORM_ENDPOINT = "https://formspree.io/f/mvkzkarv";
 
 (function () {
   "use strict";
