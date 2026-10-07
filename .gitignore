@@ -1,0 +1,13 @@
+# Public repo: ignore everything except the site files
+/*
+!/.gitignore
+!/index.html
+!/styles.css
+!/script.js
+!/CNAME
+!/logo.jpg
+!/favicon.png
+!/robots.txt
+!/progress.txt
+# Future site photos (steamer.jpg, sauce.jpg, hands.jpg, og-image.jpg)
+!/images/

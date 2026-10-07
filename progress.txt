@@ -10,9 +10,11 @@
 
 ## What changed this session
 
+- Compressed logo: logo.png (929 KB, 800px) replaced by logo.jpg (104 KB, 600px, JPEG q80); logo.png removed from repo
+- Added .gitignore that allow-lists only site files (+ images/ folder); stray "txt" file now ignored
 - Built the page: sticky top bar, maroon hero with logo badge, gold marquee, signup form, "What we make" cards, "Where to find us", footer
 - Signup posts to Formspree via fetch; noscript users get a normal form POST to the same endpoint
-- logo.png (800px) and favicon.png (180px) copied from ~/Downloads/"MAMA SU'S Woven Bamboo Logo.png"
+- Logo and favicon.png (180px) copied from ~/Downloads/"MAMA SU'S Woven Bamboo Logo.png"
 - Added CNAME (mamasusdumplings.com) and robots.txt
 - Layout pattern reference: github.com/mehersalim/barakah-bites (MIT). No code copied verbatim.
 
@@ -26,10 +28,10 @@ Create the Formspree form, then put its ID in BOTH script.js (FORM_ENDPOINT) and
 - [ ] Real Facebook page URL (index.html, "TODO" comment in "Where to find us")
 - [ ] Add images/steamer.jpg, images/sauce.jpg, images/hands.jpg (placeholders swap automatically)
 - [ ] Add images/og-image.jpg (1200x630) for link previews
-- [ ] Compress logo.png (~930 KB; e.g. squoosh.app or TinyPNG) to keep the site light
 - [ ] Push to GitHub, enable Pages (main branch, root), set custom domain + DNS, turn on Enforce HTTPS
 
 ## Watch out for
 
-- Repo root is the "Mama Su's" folder. The stray empty file "txt" there is intentionally NOT committed.
+- Repo root is the "Mama Su's" folder and will be PUBLIC. .gitignore allow-lists site files only; any new site file (e.g. a new page) must be added to .gitignore with a ! line or git won't see it.
+- logo.png still exists in git history (first commit), ~930 KB. Harmless, just repo weight.
 - No prices, ordering, preorders, or "open/licensed" claims anywhere; keep it that way until licensed.
